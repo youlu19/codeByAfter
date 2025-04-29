@@ -1,0 +1,20 @@
+
+
+
+【截图教程】：https://www.yuque.com/zhetiankeji/ifdou3/vqkrsr
+                 步骤说明：
+	1、双击运行 一键激活.vbs 文件，弹窗出现success即可。
+
+        2、执行完成以后重启软件 选择License server  输入https://jetbra.in 然后点击active激活。
+
+	3、已处于激活状态，新建或打开一个项目，选Help 菜单 Register选项 即可查看激活状态
+	
+	4、关闭自动更新提醒
+	随便新建或打开一个项目，进入开发界面，点击菜单File-》Settings
+		在弹窗左侧列表选第一个Appearance-》System settings-》Updates-》去掉所有勾选，点ok即可
+
+	
+	
+	
+	
+	

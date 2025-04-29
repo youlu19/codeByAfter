@@ -1,0 +1,94 @@
+{% load jp %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color:red;">首页{{ n1 }}</h1>
+<p>{{ n2.0 }}</p>
+<p>{{ n2.1 }}</p>
+<ul>
+    {% for e in n2 %}
+        <li>{{ e }}</li>
+    {% endfor %}
+</ul>
+<hr/>
+
+<p>{{ n3.name }}</p>
+<p>{{ n3.age }}</p>
+<ul>
+    {% for k,v in n3.items %}
+        <li>{{ k }} = {{ v }}</li>
+    {% endfor %}
+</ul>
+
+<hr/>
+
+<table border="1">
+    {% for info in n4 %}
+        <tr>
+            <td>{{ info.id }}</td>
+            <td>{{ info.name }}</td>
+            <td>{{ info.age }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<hr/>
+<p>{{ n5.name }}</p>
+<p>{{ n5.age }}</p>
+<p>{{ n5.get_data }}</p>
+<hr/>
+<p>{{ n6 }}</p>
+<hr/>
+<p>{{ n7 }}</p>
+<ul>
+    {% for item in n7 %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+<hr/>
+
+<h2>{{ n8 }}</h2>
+<h2>{{ n8|upper }}</h2>
+<h2>{{ n8|lower }}</h2>
+<h2>{{ n9 }}</h2>
+<h2>{{ n9|date:"Y-m-d H:i:s" }}</h2>
+<h2>{{ n10 }}</h2>
+
+<hr/>
+<h2>{{ n8|myfunc }}</h2>
+
+<hr/>
+<table border="1">
+    {% for info in n11 %}
+        <tr>
+            <td>{{ info.id }}</td>
+            <td>{{ info.name|myfunc }}</td>
+            <td>{{ info.age }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<hr/>
+
+<p>{% mytag1 %}</p>
+<p>{% mytag2 "太卡了" "终于不用听了" %}</p>
+
+<p>{% xxxxx 123 %}</p>
+
+<hr/>
+
+{% if mytag1 %}
+    <h4>小伙子</h4>
+{% else %}
+    <h4>少年</h4>
+{% endif %}
+
+<hr/>
+{% menu 'admin' %}
+
+</body>
+</html>

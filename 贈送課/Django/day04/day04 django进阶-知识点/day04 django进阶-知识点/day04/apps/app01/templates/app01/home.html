@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block css %}
+
+{% endblock %}
+
+{% block body %}
+    <h1>主页</h1>
+
+    {% include "app01/header.html" %}
+
+    <p>{{ info }}</p>
+
+    {% verbatim %}
+        <p>{{ info }}</p>
+    {% endverbatim %}
+
+
+{% endblock %}
+
+
+{% block js %}
+
+{% endblock %}
